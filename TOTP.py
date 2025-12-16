@@ -6,7 +6,7 @@ import hashlib
 import time
 import struct
 
-def generate_totp(userid: str) -> str):
+def generate_totp(userid: str) -> str:
     secret = (userid + "HENNGECHALLENGE004").encode("ascii")
     timestep = 30
     counter = int(time.time()) // timestep
